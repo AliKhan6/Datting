@@ -10,7 +10,7 @@ class SignInScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:appBackgroundColor,
+      backgroundColor:backgroundColor,
       body: Center(
         child: SingleChildScrollView(
           child: Column(

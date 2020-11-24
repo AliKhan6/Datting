@@ -5,7 +5,7 @@ class InterestScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: appBackgroundColor,
+      backgroundColor: backgroundColor,
       appBar: AppBar(
         title: Text('Interested in you'),
         centerTitle: true,

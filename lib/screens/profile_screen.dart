@@ -7,7 +7,7 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: appBackgroundColor,
+      backgroundColor: backgroundColor,
       appBar: AppBar(
         title: Text(userName),
         centerTitle: true,
@@ -33,7 +33,7 @@ class ProfileScreen extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                        top: 205,
+                        top: 240,
                         left: 130,
                         child: IconButton(
                             icon: Icon(Icons.favorite,color: splashScreenColor,size: 50,),
@@ -57,7 +57,7 @@ class ProfileScreen extends StatelessWidget {
 }
 
 class UserProfileDetails extends StatelessWidget {
-  String userText;
+  final String userText;
   UserProfileDetails({this.userText});
   @override
   Widget build(BuildContext context) {

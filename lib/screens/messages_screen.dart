@@ -9,7 +9,7 @@ class MessageScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: appBackgroundColor,
+      backgroundColor: backgroundColor,
       appBar: AppBar(
         title: Text('Messages'),
         centerTitle: true,

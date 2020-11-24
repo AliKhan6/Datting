@@ -1,5 +1,5 @@
 import 'package:dating/constants/colors_constants.dart';
-import 'package:dating/screens/explore_screen.dart';
+import 'package:dating/screens/home_screen.dart';
 import 'package:dating/screens/filters_screen.dart';
 import 'package:dating/screens/interest_screen.dart';
 import 'package:dating/screens/messages_screen.dart';
@@ -18,15 +18,15 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
   Widget build(BuildContext context) {
     return BottomNavigationBar(
       currentIndex: widget.navigationBarIndex,
-      unselectedItemColor: appBackgroundColor,
+      unselectedItemColor: Colors.white70,
       backgroundColor: splashScreenColor,
-      selectedItemColor: bottomcolor,
+      selectedItemColor: Colors.white,
       type: BottomNavigationBarType.fixed,
       items: [
         // ignore: deprecated_member_use
         BottomNavigationBarItem(icon: Icon(Icons.home),title: Text('Home')),
-        BottomNavigationBarItem(icon: Icon(Icons.filter_alt_outlined),title: Text('Filtered')),
-        BottomNavigationBarItem(icon: Icon(Icons.forward_to_inbox_rounded),title: Text('Messages')),
+        BottomNavigationBarItem(icon: Icon(Icons.filter),title: Text('Filtered')),
+        BottomNavigationBarItem(icon: Icon(Icons.message),title: Text('Messages')),
         BottomNavigationBarItem(icon: Icon(Icons.favorite),title: Text('Interests')),
       ],
       onTap: (currentIndex){
@@ -34,7 +34,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
           print(currentIndex);
           if (currentIndex == 0)
           {
-            Navigator.push(context,MaterialPageRoute(builder: (context)=>ExploreScreen()));
+            Navigator.push(context,MaterialPageRoute(builder: (context)=>HomeScreen()));
           }
           else if (currentIndex == 1)
           {

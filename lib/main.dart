@@ -1,4 +1,5 @@
 import 'package:dating/constants/colors_constants.dart';
+import 'package:dating/screens/home_screen.dart';
 import 'package:dating/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor:primaryColor,
       ),
-      home: SplashScreen(),
+      home: HomeScreen(),
     );
   }
 }
